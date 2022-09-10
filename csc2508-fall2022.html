@@ -51,7 +51,7 @@
 
 <div class="jumbotron">
 <h1>CSC 2508 Advanced Data Systems</h1>
-<h3>Fall 2021, Mondays 9-11am, Online</h3>
+<h3>Fall 2022, Mondays 9-11am, Online</h3>
 <p class="lead">Class repository: <a href="https://drive.google.com/drive/folders/1X1wy2gCk4a8KQ5lSb7ReBmD7mNnRK92O?usp=sharing">CSC2508 Drive</a></p>
 <p class="lead">Class Material Upload repository: <a href="https://drive.google.com/drive/folders/17SyRM8XC5wbFivFWrqkH2vZ4DdyRN7ff?usp=sharing">CSC2508 Upload Drive</a></p>
 </div>
@@ -101,7 +101,7 @@ own project. However the project you propose HAS to be associated with the mater
     <b>This is very important and it is not up for discussion</b>. The project should have a research component. 
 Project ideas will be outlined in class but you are responsible for proposing your project. Some background reading
 is associated with each project.
-The project proposal (due date Oct 25) should contain the following information:
+The project proposal (due date Oct 24) should contain the following information:
 <ul>
   <li>Topic to be addressed and the nature of the problem
   <li>State of the art (prior work, what remains unsolved, etc.)
@@ -109,7 +109,7 @@ The project proposal (due date Oct 25) should contain the following information:
   <li>To what degree the project will repeat existing work
   <li>Specific, measurable goals: deliverables, and dates you expect to produce them
 </ul>
-Project proposals should be a two pages at most. A project status report is due on Nov 22. 
+Project proposals should be a two pages at most. A project status report is due on Nov 21. 
 		The status report should include a description of progress to date and what is expected to be accomplished by 
 		the final project presentation day.</li>
       
@@ -119,7 +119,7 @@ Project proposals should be a two pages at most. A project status report is due 
 </p>
 	<p><b>Final Project Reports</b>
 		<ul>
-			<li> Final project reports are due Jan 2 2021 </li>
+			<li> Final project reports are due Jan 2 2023 </li>
 			<li> Reports should be structured as a research paper, containing an introduction to the problem solved and its importance, 
 				summary of related work with citations, a section detailing if the methodology is new and proposed by you or whether it is from the literature, along with citations of any techniques you implemented,
 				a description of the technical developments outlining algorithms and their description, detailed experimental evaluation, conclusions and thoughts on future work and extensions.
@@ -167,8 +167,7 @@ Project proposals should be a two pages at most. A project status report is due 
       <td class="side-borders">
         <ul>
           <li>Background: Review Chapters 3,4,10,11,13,14,15 from ramakrishnan's book (Database Management Systems) 3rd Edition.<br>
-  </li>
-  <li>R-Trees: A Dynamic Index Structure for Spatial Searching, A. Guttman, SIGMOD 1984</li>
+         </li>
         </ul>
       </td> 
     </tr>
@@ -203,7 +202,6 @@ Project proposals should be a two pages at most. A project status report is due 
         <li>Kraska et. al., SageDB A Learned Database System, CIDR 2018</li>
   	    <li>Kraska et. al., The Case for Learned Indicies, SIGMOD 2018</li>
 		<li>Benchmarking Learned Indexes, VLDB 2021 </li>
-  	    <li>Ding et. al., ALEX: An updatable Adaptive Learned Index, SIGMOD 2020</li>
 	      <li>M. Mintzemaher, A Model For Learned Bloom Filters and Related Structures</li>
         </ul>
       </td> 
@@ -212,14 +210,15 @@ Project proposals should be a two pages at most. A project status report is due 
 	   <tr>
       <td>4</td>
       <td>10/3</td>
-      <td>~Multi-d Indexing</td>
+      <td>~Indexing & Searching I</td>
       <td class="side-borders">
       <!-- Lecture -->
       <a href=""><a href="">Lecture 4</a>
       </td>      
       <td class="side-borders">
         <ul>
-         <li>Learned Index for Spatial Queries, MDM 2019</li>
+          <li>Gionis et. al., Similarity Search in High Dimensions Using Hashing VLDB 1999 </li>
+	   <li>R-Trees: A Dynamic Index Structure for Spatial Searching, A. Guttman, SIGMOD 1984</li>
          <li>The ML-Index: A Multidimensional, Learned Index for Point, Range, and Nearest-Neighbor Queries, EDBT 2020</li>
 	 <li>Tsunami: A learned multi dimensional index for correlated data and skewed workloads, VLDB 2021</li> 
 	 <li> Learning Multi-dimensional Indexes SIGMOD 2020 </li>
@@ -233,24 +232,45 @@ Project proposals should be a two pages at most. A project status report is due 
     <tr>
       <td>5</td>
       <td>10/17</td>
-      <td>Sorting & NN Neighbors</td>
+      <td>Indexing and Searching II</td>
       <td class="side-borders">
       <!-- Lecture -->
       <a href=""><a href="">Lecture 5</a>      
       </td>      
       <td class="side-borders">
         <ul>
-  <li>Kristo et. al., The Case for a Learned Sorting Algorithm SIGMOD 2020 </li>
-  <li>Dong et. al., Learning Space Partitions for NN Search ICLR 2020</li>
-  <li>Gionis et. al., Similarity Search in High Dimensions Using Hashing VLDB 1999 </li>
-		<li> Billion Scale Similarity Search in GPUs </li>
+  <li>H. Jégou, M. Douze and C. Schmid, "Product Quantization for Nearest Neighbor Search," 
+	  IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 33, no. 1, pp. 117-128, Jan. 2011 </li>
+  <li>T. Ge, K. He, Q. Ke and J. Sun, "Optimized Product Quantization," 
+	  IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 36, no. 4, pp. 744-755, April 2014</li>
+  <li>A. Babenko and V. Lempitsky, "The inverted multi-index," 2012 IEEE Conference on Computer Vision and Pattern Recognition, 2012 </li>
         </ul>
       </td> 
     </tr>
 
+	  
+	  <tr>
+      <td>5</td>
+      <td>10/24</td>
+      <td>Indexing and Searching III</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      <a href=""><a href="">Lecture 5</a>      
+      </td>      
+      <td class="side-borders">
+        <ul>
+  <li>Y. A. Malkov and D. A. Yashunin, "Efficient and Robust Approximate Nearest Neighbor Search Using Hierarchical Navigable Small World Graphs," 
+	  IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 42, no. 4, pp. 824-836, 1 April 2020 </li>
+  <li> Fu, Cong and Xiang, Chao and Wang, Changxu and Cai, Deng, Fast Approximate Nearest Neighbor Search with the Navigating Spreading-out Graph, VLDB 2019</li>
+  <li>Wang, Mengzhao and Xu, Xiaoliang and Yue, Qiang and Wang, Yuxiang, 
+	  A Comprehensive Survey and Experimental Comparison of Graph-Based Approximate Nearest Neighbor Search, VLDB 2021</li>
+        </ul>
+      </td> 
+    </tr>
+	  
     <tr>
       <td>6</td>
-      <td>10/24</td>
+      <td>10/31</td>
       <td>Approximate Queries</td>
       <td class="side-borders">
       <!-- Lecture -->
@@ -270,7 +290,7 @@ Project proposals should be a two pages at most. A project status report is due 
 
     <tr>
       <td>7</td>
-      <td>10/31</td>
+      <td>11/14</td>
       <td>Entity Resolution</td>
       <td class="side-borders">
       <!-- Lecture -->
@@ -278,11 +298,10 @@ Project proposals should be a two pages at most. A project status report is due 
       </td>      
       <td class="side-borders">
         <ul> 
-		<li>Ebraheem et. al., Distributed Representations of Tuples for Entity Resolution PVLDB 2018</li>
-		<li>Brunner et. al., Entity Matching with Transformer Architecture EDBT 2020 (optional)</li>
-		<li>Doan et. al., Deep Entity Matching with pre-trained language models VLDB 2021</li>
+	<li> Mugdal et. al., Deep Learning for Entity Matching: A Design Space Exploration. SIGMOD 2018 </li>
+        <li>Thirumuruganthan et. al., Deep learning for blocking in entity matching: a design space exploration. VLDB 2021 </li>
+		<li> Doan et. al., Deep Entity Matching with Pre-Trained Language Models. VLDB 2021 </li>
 		<li>Neural Networks for Entity Matching a survey: ACM Computing Surveys 2021</li>
-		<li>Mugdal et. al., Deep Learning for Entity Matching a design space exploration, SIGMOD 2018</li>
         </ul>
       </td> 
 	    
@@ -290,7 +309,7 @@ Project proposals should be a two pages at most. A project status report is due 
 
     <tr>
       <td>8</td>
-      <td>11/14</td>
+      <td>11/21</td>
       <td>DNN Training</td>
       <td class="side-borders">
       <!-- Lecture -->       
@@ -300,8 +319,8 @@ Project proposals should be a two pages at most. A project status report is due 
         <ul>
 		<li>Analyzing and Minigating Data Stalls in DNN Training, VLDB 2021</li>
 		<li>Progressive Compressed Records: Taking a Byte out of Deep Learning Data, VLDB 2021</li>
-		<li>A Deep NN Favourable JPEG based image compression framework</li>
-		<li>A Domain specific supercomputer for training Deep NN</li>
+		<li> Kucknik et. al., Plumber: Diagnosing and removing performance bottlenecks in Machine Learning Data Pipelines MLsys 2022</li>
+		<li> Isenko et. al., Where is my training bottleneck: Hidden Tradeoffs in deep learning preprocessing pipelines, SIGMOD 2022 </li>
         </ul>
       </td> 
 	    
@@ -309,7 +328,7 @@ Project proposals should be a two pages at most. A project status report is due 
 
     <tr>
       <td>9</td>
-      <td>11/21</td>
+      <td>11/28</td>
       <td>Video Streams</td>
       <td class="side-borders">
       <!-- Lecture -->
@@ -330,7 +349,7 @@ Project proposals should be a two pages at most. A project status report is due 
 
     <tr>
       <td>10</td>
-      <td>11/28</td>
+      <td>12/05</td>
       <td>Labelling Training Data</td>
       <td class="side-borders">
       <!-- Lecture -->      
@@ -347,24 +366,6 @@ Project proposals should be a two pages at most. A project status report is due 
       </td> 
      
     </tr>
-
-  <tr>
-      <td>11</td>
-      <td>12/05</td>
-      <td>information Extraction</td>
-      <td class="side-borders">
-      <!-- Lecture -->
-        <a href=""><a href="">Lecture 11</a>
-      </td>      
-      <td class="side-borders">
-        <ul>
-		<li>Incremetal Knowledge base construction using DeepDive VLDB 2015</li>
-		<li>Scalable Zero Shot Entity Linking with Dense Entity Retrieval</li>
-		<li>Matching the blanks: Distributional Similarity for relation learning</li>   
-        </ul>
-      </td> 
-    </tr>
-
 	  
 	  <tr>
       <td>12</td>

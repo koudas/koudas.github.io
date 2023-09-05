@@ -1,1 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <title>CSC2508 - Advanced Data Systems (Fall 2023)</title>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<div class="container">
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">CSC 2508</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#description">Description</a></li>
+              <li><a href="#logistics">Class Logistics</a></li>
+              <li><a href="#lecture">Lecture Plan</a></li>
+              <li><a href="#grading">Grading</a></li>                          
+              <li class="divider"></li>
+              <li><a href="#late-policy">Late Policy</a></li>                      
+            </ul>
+          </li>
+          <li><a href="#office-hours">Office Hours</a></li>          
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<div class="jumbotron">
+<h1>CSC 2508 Advanced Data Systems</h1>
+<h3>Fall 2023, Mondays 9-11am, TBD </h3>
+<p class="lead">Class repository: <a href="https://drive.google.com/drive/folders/1Vbtar2DLUJDVqPY79GWXMSs4S16Ho6EJ?usp=sharing">CSC2508 Drive</a></p>
+<p class="lead">Class Material Upload repository: <a href="https://drive.google.com/drive/folders/1TzCNyoqeHf33tg8wU_SH4wT56y0WLLmK?usp=sharing">CSC2508 Upload Drive</a></p>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Description</div>
+  <div class="panel-body">
+    <a name="description"></a>
+<p>
+The maturity of several Deep Learning technologies has influenced the design and instigated re-thinking several
+design principles of data processing systems and architectures.
+
+The goal of this course is two-fold. First present a review of the fundamental design components of
+modern data management architectures including a review of relational and NoSQL systems. Second
+review and explore how fundamental components can be re-designed by incorporating Deep Learning principles
+and techniques and explore the resulting (performance and system) implications. In particular this term the course will focus on the redesign of popular information retrieval paradigms utilizing
+  deep learning and large language models. 
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Class Logistics</div>
+  <div class="panel-body">
+	  <a name="logistics"></a>
+    <p> <b>Class Format</b>
+    <ul>
+    <li><p>This is a seminar course. Each class will consist of presentations and discussion. Students will be required to do 
+	    a class project for the course. A significant portion of the grade will be based on class participation, which 
+	    includes paper presentations, contributions to paper reviews, and paper discussions. Because of the interactive nature of the course, and space limitations, auditing is discouraged.
+    </p></li>
+    </ul>
+    </p>
+	  <p> <b>Prerequisites</b>
+	  <ul>
+		<li><p>Background in algorithms, databases, machine learning suggested.</p></li>
+	  </ul>
+	  </p>    
+<p><b>Assignments</b>
+    <ul>
+      <li>A research class project: Each of you will work on a research project and file a single submission. The project will be 
+	      broken down to three assignments: (1) initial research proposal, (2) Intermediate report, (3) final report and 
+	      presentation</li>
+	<li> Proposed class projects will be described by the instructor.
+Feel free to discuss your ideas with the instructor and propose your
+own project. However the project you propose HAS to be associated with the material in the class.
+    <b>This is very important and it is not up for discussion</b>. The project should have a research component. 
+Project ideas will be outlined in class but you are responsible for proposing your project. Some background reading
+is associated with each project.
+The project proposal (due date Oct 23) should contain the following information:
+<ul>
+  <li>Topic to be addressed and the nature of the problem
+  <li>State of the art (prior work, what remains unsolved, etc.)
+  <li>The proposed technique to be implemented/evaluated
+  <li>To what degree the project will repeat existing work
+  <li>Specific, measurable goals: deliverables, and dates you expect to produce them
+</ul>
+Project proposals should be a two pages at most. A project status report is due on Nov 20. 
+		The status report should include a description of progress to date and what is expected to be accomplished by 
+		the final project presentation day.</li>
+      
+	<li>Questions and Responses (QRs): During each class you will need to provide 2 questions in writing for each (mandatory) paper. Questions will be <b>individual assignments</b>. For each class one of you will be responsible to lead a discussion on the papers and provide answers to all questions provided during class. Questions and responses will then be summarized in a written report which will be submitted and shared with everyone in the class. </li>            
+      <li>There will be <b> no midterm or final exams</b>.
+    </ul>
+</p>
+	<p><b>Final Project Reports</b>
+		<ul>
+			<li> Final project reports are due Jan 2 2023 </li>
+			<li> Reports should be structured as a research paper, containing an introduction to the problem solved and its importance, 
+				summary of related work with citations, a section detailing if the methodology is new and proposed by you or whether it is from the literature, along with citations of any techniques you implemented,
+				a description of the technical developments outlining algorithms and their description, detailed experimental evaluation, conclusions and thoughts on future work and extensions.
+			<li> Essentially your report should mirror the structure of the papers you have been reading during the term </li>
+	</ul>
+	</p>
+<p><b>Misc</b>
+    <ul>
+      <li>Class time may be adjusted to accomodate external talks releated to the class.</li>      
+    </ul>
+</p>
+
+
+
+</div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title">Tentative Lecture Plan (Subject to Change)</h2>
+  </div>
+  <div class="panel-body">
+    <a name="lecture"></a>    
+    <p>
+    <hr /> 
+
+<table class="plan">
+  <tbody>
+    <tr>
+      <th>Date</th>
+      <th>Topic</th>
+      <th>Reading Material</th>
+    </tr>
+	  
+    <tr>
+      <td>9/11</td>
+      <td>Logistics and Review of relational technology</td>      
+      <td class="side-borders">
+        <ul>
+          <li>Background: Review Chapters 3,4,10,11,13,14,15 from ramakrishnan's book (Database Management Systems) 3rd Edition.<br>
+         </li>
+        </ul>
+      </td> 
+    </tr>
+
+    <tr>
+      <td>9/19</td>
+      <td>Overview of Information Retirveal noSQL</td>   
+      <td class="side-borders">
+        <ul>
+           <li>Christopher D. Manning, Prabhakar Raghavan and Hinrich Schütze, Introduction to Information Retrieval, Cambridge University Press. 2009 (Chapters 1-4 - https://nlp.stanford.edu/IR-book/)</li>
+           <li>J. Dean and S. Ghemawat, MapReduce: Simplified Data Processing on Large Clusters, in OSDI 2004.</li>
+        </ul>
+      </td> 
+    </tr>
+
+    <tr>
+      <td>9/26</td>
+      <td>Indexing</td>     
+      <td class="side-borders">
+        <ul>
+        <li>Kraska et. al., SageDB A Learned Database System, CIDR 2018</li>
+  	    <li>Kraska et. al., The Case for Learned Indicies, SIGMOD 2018</li>
+		<li>Benchmarking Learned Indexes, VLDB 2021 </li>
+	      <li>M. Mintzemaher, A Model For Learned Bloom Filters and Related Structures</li>
+        </ul>
+      </td> 
+    </tr>
+	  
+	   <tr>
+      <td>10/3</td>
+      <td>Indexing & Searching I</td>
+      <td class="side-borders">
+        <ul>
+          <li>Gionis et. al., Similarity Search in High Dimensions Using Hashing VLDB 1999 </li>
+	   <li>R-Trees: A Dynamic Index Structure for Spatial Searching, A. Guttman, SIGMOD 1984</li>
+         <li>The ML-Index: A Multidimensional, Learned Index for Point, Range, and Nearest-Neighbor Queries, EDBT 2020</li>
+	 <li>Tsunami: A learned multi dimensional index for correlated data and skewed workloads, VLDB 2021</li> 
+	 <li> Learning Multi-dimensional Indexes SIGMOD 2020 </li>
+        </ul>
+      </td> 
+      
+    </tr>
+	  
+	  
+
+    <tr>
+      <td>10/17</td>
+      <td>Indexing and Searching II</td>     
+      <td class="side-borders">
+        <ul>
+  <li>H. Jégou, M. Douze and C. Schmid, "Product Quantization for Nearest Neighbor Search," 
+	  IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 33, no. 1, pp. 117-128, Jan. 2011 </li>
+  <li>T. Ge, K. He, Q. Ke and J. Sun, "Optimized Product Quantization," 
+	  IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 36, no. 4, pp. 744-755, April 2014</li>
+  <li>A. Babenko and V. Lempitsky, "The inverted multi-index," 2012 IEEE Conference on Computer Vision and Pattern Recognition, 2012 </li>
+        </ul>
+      </td> 
+    </tr>
+
+	  
+	  <tr>
+      <td>10/24</td>
+      <td>Indexing and Searching III</td>    
+      <td class="side-borders">
+        <ul>
+  <li>Y. A. Malkov and D. A. Yashunin, "Efficient and Robust Approximate Nearest Neighbor Search Using Hierarchical Navigable Small World Graphs," 
+	  IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 42, no. 4, pp. 824-836, 1 April 2020 </li>
+  <li> Fu, Cong and Xiang, Chao and Wang, Changxu and Cai, Deng, Fast Approximate Nearest Neighbor Search with the Navigating Spreading-out Graph, VLDB 2019</li>
+  <li>Wang, Mengzhao and Xu, Xiaoliang and Yue, Qiang and Wang, Yuxiang, 
+	  A Comprehensive Survey and Experimental Comparison of Graph-Based Approximate Nearest Neighbor Search, VLDB 2021</li>
+        </ul>
+      </td> 
+    </tr>
+	  
+    <tr>
+      <td>10/31</td>
+      <td>Approximate Queries</td>    
+      <td class="side-borders">
+        <ul>
+           <li>Mozafari et. al., A Handbook for Building an Approximate Query Engine TKDE 2019</li>
+           <li>Ma et. al., Revisiting Approximate Query Engines with machine Learning models SIGMOD 2019</li>
+         <li>Thirumuruganathan et. al., Approximate Query Processing Using Deep Generative Models ICDE 2020</li>
+         <li>Savva et. al., ML-AQL: Query Driven Approximate Query Processing based on ML. arxiv</li>
+        </ul>
+      </td> 
+    </tr>    
+
+
+
+    <tr>
+      <td>11/14</td>
+      <td>Entity Resolution</td>      
+      <td class="side-borders">
+        <ul> 
+	<li> Mugdal et. al., Deep Learning for Entity Matching: A Design Space Exploration. SIGMOD 2018 </li>
+        <li>Thirumuruganthan et. al., Deep learning for blocking in entity matching: a design space exploration. VLDB 2021 </li>
+		<li> Doan et. al., Deep Entity Matching with Pre-Trained Language Models. VLDB 2021 </li>
+		<li>Neural Networks for Entity Matching a survey: ACM Computing Surveys 2021</li>
+        </ul>
+      </td> 
+	    
+    </tr>
+
+    <tr>
+      <td>11/21</td>
+      <td>DNN Training</td>     
+      <td class="side-borders">
+        <ul>
+		<li>Analyzing and Minigating Data Stalls in DNN Training, VLDB 2021</li>
+		<li>Progressive Compressed Records: Taking a Byte out of Deep Learning Data, VLDB 2021</li>
+		<li> Kucknik et. al., Plumber: Diagnosing and removing performance bottlenecks in Machine Learning Data Pipelines MLsys 2022</li>
+		<li> Isenko et. al., Where is my training bottleneck: Hidden Tradeoffs in deep learning preprocessing pipelines, SIGMOD 2022 </li>
+        </ul>
+      </td> 
+	    
+    </tr>
+
+    <tr>
+      <td>11/28</td>
+      <td>Caching and Prefetching</td>     
+      <td class="side-borders">
+        <ul>
+		<li>Renen et. al., Managing non-volatile memory in database systems, SIGMOD 2018</li>
+		<li>Zhou et. al., Spitfire: A three tier buffer manager for non volatile and volatile memory, SIGMOD 2021</li>
+		<li>Vietri et. al., Driving Page Replacement with ML-Based leCar, HotStorage 2018</li>
+		<li>Liu et. al., An Imitation Based Approach for Cache replacement PMLR 2020</li>   
+		<li>Lykouris et. al., Better Caching with ML based advice, MLSys 2018</li>
+        </ul>
+      </td> 
+	    
+    </tr>
+
+    <tr>
+      <td>12/05</td>
+      <td>Labelling Training Data</td>     
+      <td class="side-borders">
+        <ul>
+		<li>Snorkel: Rapid Training Data Creation with Weak Supervision, VLDB 2017</li> 
+		<li>Snuba: Automating Weak Supervision to label Training data, VLDB 2019 </li>
+		<li>A Survey on Programmatic Weak Supervision</li>
+		<li> End-to-End Weak Supervision </li>
+        </ul>
+      </td> 
+     
+    </tr>
+	  
+	  <tr>
+      <td>12/08</td>
+      <td>Query Optimization</td>     
+      <td class="side-borders">
+        <ul>
+		<li>Overview of Query Optimization in relational Systems, S. Chaudhuri PODS 1998</li>
+		<li>Bao: Making Learned Query Optimization Practical, SIGMOD 2021</li>
+		<li>Vaidya, Kapil and Dutt, Anshuman and Narasayya, Vivek and Chaudhuri, Surajit,
+                    Leveraging Query Logs and Machine Learning for Parametric Query Optimization, VLDB 2021 </li>
+		<li>Steering Query Optimizers: A Practical Take on Big Data Workloads, SIGMOD 2021</li>   
+        </ul>
+      </td> 
+    </tr>
+	  
+	  
+  </tbody>
+</table>
+
+</p>
+</div>
+</div> 
+
+<div class="panel panel-default">
+  <div class="panel-heading">Grading</div>
+  <div class="panel-body">
+	  <a name="grading"></a>
+<table>
+  <tr><th>Weight</th><th>Item</th><th>Minimal mark</th><th>Moderate mark</th><th>High mark</th></tr>
+  <tr><td>30%</td><td>Participation</td><td>Present</td><td>Talkative</td><td>Insightful comments or questions</td></tr>
+  <tr><td>20%</td><td>Presentations</td><td>Factually correct</td><td>Designed and delivered well</td><td>Transmits effectively key points, implications, etc.</td></tr>
+  <tr><td>5%</td><td>Quality of feedback to peers</td><td>Focus on nitpicks and minutiae</td><td>Suggest incremental improvements</td><td>Identify structural strengths and flaws</td></tr>
+  <tr><td>45%</td><td>Final project</td><td>Unambitious and/or badly planned</td><td>Partially implemented and/or poorly presented</td><td>Implemented successfully with key learning points presented</td></tr>
+</table>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Office Hours</div>
+  <div class="panel-body">
+    <a name="office-hours"></a>
+    <p>I will be holding office hours after the class at BA 5240. Also available by Appointment: Send me an email (use subject CSC2508)</p>    
+</div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Late Policy and Deliverables</div>
+  <div class="panel-body">
+	  <a name="late-policy"></a>
+There will be <b>no late dates for the project deliverables</b> and no late dates for in class questions. Extensions may be granted in the case of a severe medical or family emergency.
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Credit</div>
+  <div class="panel-body">  
+The template of this website was created by HazyReseach@Stanford.
+  </div>
+</div>
+ 
+</div>
+</body> 
+
+</html>
